@@ -1,35 +1,246 @@
-<header>
-    <nav>
-        <a href="#hem">Hem</a>
-        <a href="#dagen">Dagen</a>
-        <a href="#praktiskt">Praktiskt</a>
-        <a href="#osa">OSA</a>
-    </nav>
-</header>
+```html
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<main>
+    <title>Anna & Erik</title>
 
-    <section id="hem">
-        <h1>Joanna & Ludwig</h1>
-        <p>Vi gifter oss!</p>
-        <p>12 juni 2027</p>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
 
-        <a href="#osa" class="button">OSA</a>
-    </section>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-    <section id="dagen">
-        <h2>Vår stora dag</h2>
-        ...
-    </section>
+<body>
 
-    <section id="praktiskt">
-        <h2>Praktisk information</h2>
-        ...
-    </section>
+    <!-- NAVIGATION -->
+    <header class="navbar">
+        <a href="#top" class="logo">
+            <span class="logo-image">
+                <img src="images/logo.jpg" alt="Anna och Erik">
+            </span>
+            <span>Anna & Erik</span>
+        </a>
 
-    <section id="osa">
-        <h2>OSA</h2>
-        ...
-    </section>
+        <nav>
+            <a href="#dagen">Dagen</a>
+            <a href="#praktiskt">Praktiskt</a>
+            <a href="#osa">OSA</a>
+        </nav>
+    </header>
 
-</main>
+
+    <main id="top">
+
+        <!-- HERO -->
+        <section class="hero">
+
+            <div class="hero-image">
+                <img src="images/hero.jpg" alt="">
+            </div>
+
+            <div class="hero-content">
+                <p class="eyebrow">14 AUGUSTI 2027</p>
+
+                <h1>
+                    Anna<br>
+                    <em>&</em> Erik
+                </h1>
+
+                <p class="hero-intro">Vi gifter oss!</p>
+
+                <a href="#osa" class="text-link">OSA <span>↓</span></a>
+            </div>
+
+        </section>
+
+
+        <!-- INTRO -->
+        <section class="intro section">
+
+            <div class="section-label">01 / VÄLKOMMEN</div>
+
+            <div class="intro-content">
+                <h2>
+                    Vi vill fira<br>
+                    med er.
+                </h2>
+
+                <div class="intro-text">
+                    <p>
+                        Välkommen till vår bröllopshemsida! Här hittar
+                        ni all information inför vår stora dag.
+                    </p>
+
+                    <p>
+                        Vi ser så mycket fram emot att få fira tillsammans
+                        med våra nära och kära.
+                    </p>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- THE DAY -->
+        <section id="dagen" class="day section">
+
+            <div class="section-label">02 / VÅR DAG</div>
+
+            <div class="day-grid">
+
+                <div class="day-heading">
+                    <h2>Program</h2>
+                    <p>14 augusti 2027</p>
+                </div>
+
+                <div class="schedule">
+
+                    <div class="schedule-item">
+                        <span class="time">14.00</span>
+                        <div>
+                            <h3>Vigsel</h3>
+                            <p>Plats för vigsel</p>
+                        </div>
+                    </div>
+
+                    <div class="schedule-item">
+                        <span class="time">15.00</span>
+                        <div>
+                            <h3>Mingel</h3>
+                            <p>Plats för mingel och bubbel</p>
+                        </div>
+                    </div>
+
+                    <div class="schedule-item">
+                        <span class="time">17.00</span>
+                        <div>
+                            <h3>Middag</h3>
+                            <p>Middag och tal</p>
+                        </div>
+                    </div>
+
+                    <div class="schedule-item">
+                        <span class="time">20.00</span>
+                        <div>
+                            <h3>Fest</h3>
+                            <p>Dans, musik och firande</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- IMAGE -->
+        <section class="full-image">
+            <img src="images/photo-1.jpg" alt="">
+        </section>
+
+
+        <!-- PRACTICAL -->
+        <section id="praktiskt" class="practical section">
+
+            <div class="section-label">03 / PRAKTISKT</div>
+
+            <div class="practical-grid">
+
+                <div class="info-block">
+                    <h3>Klädkod</h3>
+                    <p>
+                        Här skriver ni information om klädkoden
+                        och eventuell annan information kring klädsel.
+                    </p>
+                </div>
+
+                <div class="info-block">
+                    <h3>Plats</h3>
+                    <p>
+                        Här skriver ni adress och information om
+                        hur man hittar till bröllopet.
+                    </p>
+                </div>
+
+                <div class="info-block">
+                    <h3>Boende</h3>
+                    <p>
+                        Här skriver ni information om hotell,
+                        vandrarhem eller andra boendealternativ.
+                    </p>
+                </div>
+
+                <div class="info-block">
+                    <h3>Transport</h3>
+                    <p>
+                        Här skriver ni information om buss,
+                        taxi, parkering eller annan transport.
+                    </p>
+                </div>
+
+                <div class="info-block">
+                    <h3>Barn</h3>
+                    <p>
+                        Här skriver ni information om barn är
+                        välkomna eller om det är en vuxenfest.
+                    </p>
+                </div>
+
+                <div class="info-block">
+                    <h3>Presenter</h3>
+                    <p>
+                        Här skriver ni information om presenter
+                        och eventuella önskemål.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- RSVP -->
+        <section id="osa" class="rsvp section">
+
+            <div class="section-label">04 / OSA</div>
+
+            <div class="rsvp-content">
+
+                <h2>
+                    Kommer du<br>
+                    och firar med oss?
+                </h2>
+
+                <p>
+                    Vi hoppas verkligen att du vill vara med!
+                    Svara senast den 1 juni 2027.
+                </p>
+
+                <a href="#" class="button">
+                    OSA HÄR
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Anna & Erik</p>
+        <p>14.08.2027</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+```
